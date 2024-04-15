@@ -61,6 +61,6 @@ rms_error_x = rms(data.X_Velocity_cm_s_(2:end) - resampledSim.Data(2:end,1));
 rms_error_y = rms(data.Y_Velocity_cm_s_(2:end) - resampledSim.Data(2:end,2));
 
 error = norm([rms_error_x, rms_error_y]);
-% error = rms_error_y;
+% error = rms_error_x;
 end
 
